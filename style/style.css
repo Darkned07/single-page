@@ -1,0 +1,441 @@
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --black-color: #030303;
+  --white-color: #fff7f0;
+  --pink-color: #755cde;
+  --brown-color: #7a746e;
+  --main-color: #fff;
+  --orange-color: #f6a560;
+  --pink-main-color: #f39e9e;
+  --orange-main-color: #eb7565;
+  --blue-color: #61c4b7;
+  --red-main-color: #552049;
+  --fonts-main: "Plus Jakarta Sans", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: var(--white-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header {
+}
+
+.header-container {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+
+.site-logo {
+}
+
+.header-btn {
+  padding: 14px 45px;
+  border-radius: 28px;
+  background: var(--black-color);
+  color: var(--white-color);
+  font-family: var(--fonts-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.header-btn:hover {
+  border-radius: 28px;
+  background: var(--pink-color);
+}
+
+.design {
+}
+
+.design-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  margin-bottom: 40px;
+}
+
+.design-content {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+}
+
+.design-title {
+  text-align: center;
+  color: var(--black-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.design-description {
+  width: 100%;
+  max-width: 730px;
+  color: var(--brown-color);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.design-nav {
+  margin-top: 40px;
+}
+
+.design-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.design-li {
+  display: block;
+}
+
+.design-li-div {
+  width: 100%;
+  max-width: 354px;
+  border-radius: 8px;
+  background: var(--pink-color);
+  padding-bottom: 20px;
+}
+
+.design-li-img {
+  margin: 24px 24px 94px 202px;
+}
+
+.design-li-title {
+  color: var(--main-color);
+  font-family: var(--fonts-main);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+  padding-bottom: 20px;
+}
+
+.des-li-w {
+  border-radius: 8px;
+  background: var(--orange-color);
+  width: 100%;
+  max-width: 164px;
+  display: block;
+}
+
+.des-li-w-img {
+  margin: 24px 24px 40px 75px;
+}
+
+.des-li-w-w {
+  width: 100%;
+  max-width: 164px;
+  border-radius: 8px;
+  background: var(--pink-main-color);
+  display: block;
+}
+
+.design-li-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.des-li-w-w-w {
+  width: 100%;
+  max-width: 354px;
+  border-radius: 8px;
+  background: var(--orange-main-color);
+  display: block;
+}
+
+.des-li-w-w-w-img {
+  margin: 24px 25px 16px 200px;
+}
+
+.desi-li {
+  width: 100%;
+  max-width: 354px;
+  border-radius: 8px;
+  background: var(--blue-color);
+  margin-bottom: 25px;
+}
+
+.desi-li-img {
+  margin: 24px 24px 40px 170px;
+}
+
+.desi-li-li {
+  width: 100%;
+  max-width: 354px;
+  border-radius: 8px;
+  background: var(--red-main-color);
+}
+
+.desi-li-li-img {
+  margin: 24px 24px 16px 202px;
+}
+
+.services {
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 136px;
+}
+
+.services-img {
+}
+
+.services-content {
+  width: 100%;
+  max-width: 540px;
+}
+
+.services-title {
+  color: var(--black-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.services-desc {
+  color: var(--brown-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 34px;
+  margin-bottom: 32px;
+}
+
+.services-btn {
+  padding: 14px 45px;
+  border-radius: 28px;
+  background: var(--orange-main-color);
+  color: var(--white-color);
+  font-family: var(--fonts-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.services-btn:hover {
+  border-radius: 28px;
+  background: var(--orange-color);
+}
+
+.work {
+}
+
+.work-container {
+  margin-top: 88px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.work-title {
+  color: var(--black-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.works-containers {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.work-imgs {
+  width: 500px;
+  height: 500px;
+}
+
+.foot {
+}
+
+.foot-container {
+  margin-top: 88px;
+  border-radius: 10px;
+  background: var(--black-color);
+  padding: 80px 95px 80px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foot-content {
+  width: 100%;
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.foot-title {
+  color: var(--white-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.foot-desc {
+  color: var(--light-cream, var(--white-color));
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--fonts-main);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.foot-btn {
+  padding: 14px 45px;
+  border-radius: 28px;
+  background: var(--orange-main-color);
+  color: var(--white-color);
+  font-family: var(--fonts-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.foot-btn:hover {
+  border-radius: 28px;
+  background: var(--orange-color);
+}
+
+.foter {
+}
+
+.container {
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 68px;
+}
+
+.footer-a {
+}
+
+.footer-img {
+}
+
+.footer-btn {
+  padding: 14px 45px;
+  border-radius: 28px;
+  background: var(--black-color);
+  color: var(--white-color);
+  font-family: var(--fonts-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.footer-btn:hover {
+  border-radius: 28px;
+  background: var(--pink-color);
+}
